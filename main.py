@@ -1,7 +1,8 @@
 from telegram import Update
-from telegram.ext import Updater, CallbackContext,CommandHandler
+from telegram.ext import Updater, CallbackContext, CommandHandler
+from settings import *
 
-updater = Updater(token="6077702907:AAGaVvvJ6EAkVWSFWC9X-3EJn8nWi7ulQeg", use_context=True)
+updater = Updater(token=TELEGRAM_TOKEN, use_context=True)
 
 
 def start(update: Update, context: CallbackContext):
